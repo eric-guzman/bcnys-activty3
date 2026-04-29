@@ -317,6 +317,10 @@
     .tab { padding: 9px 10px; font-size: 12px; }
     .metric-grid { grid-template-columns: repeat(2, 1fr); }
   }
+ /* Force center alignment only on the Welcome screen */
+#screen-welcome .inner {
+  text-align: center;
+}
 </style>
 </head>
 <body>
@@ -335,7 +339,8 @@
     <span class="accenture-word">accenture</span>
   </div>
 </div>
-
+<div class="screen active" id="screen-welcome">
+  <div class="inner">
     <h1>NYS AI Workforce Agenda<br><span>Live Crowd-Sourced Policy &amp; Commitment Board</span></h1>
     <p class="sub">
       What is your single biggest AI workforce commitment or policy ask?<br>
